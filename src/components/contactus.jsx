@@ -10,7 +10,7 @@ export default function Contactus(){
 
 
         <p className="text-xl text-white">
-            <span className="font-semibold text-purple-400">Address:</span> Your Coaching Location
+            <span className="font-semibold text-purple-400">Address:</span> Neena thapa road,Kunraghat Gorakhpur
           </p>
           <p className="text-xl flex flex-row  justify-center items-center mt-4">
             <span className="font-semibold flex flex-row items-center justify-center gap-1 text-green-400">  <a href="https://imgbb.com/"><img src="https://i.ibb.co/6JBBH5d/whatsapp.png" alt="whatsapp" border="0" width={24} /></a> | Phone: </span> +91-7054722558
