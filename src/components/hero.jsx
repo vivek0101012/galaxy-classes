@@ -27,7 +27,7 @@ return <div className="flex bg-gradient-to-b from-gray-800 to-gray-900 flex-col 
       ><button className="mt-10 flex flex-row  justify-center items-center space-x-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 py-3 rounded-full text-lg shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
 
       Join Now 
-      <img src="src/images/whatsapp.png" className="ml-2" alt="" width={24} />
+      <a className="p-1" href="https://imgbb.com/"><img src="https://i.ibb.co/6JBBH5d/whatsapp.png" width={24} alt="whatsapp" border="0" /></a> 
     </button> </a>
 </div>
 
