@@ -1,6 +1,6 @@
 export default function Classes() {
     return (
-      <div className="py-16 bg-gray-900">
+      <div className="py-16  bg-[#020817]">
         <h3 className="text-center text-4xl font-extrabold text-cyan-400 underline decoration-dotted underline-offset-8">
           Boards & Classes We Teach
         </h3>
@@ -81,3 +81,6 @@ export default function Classes() {
     );
   }
   
+
+
+

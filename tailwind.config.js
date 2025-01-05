@@ -7,9 +7,28 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lemonMilk: ['"Lemon Milk"', 'sans-serif'], // Custom font family
+        lemonMilk: ['"Lemon Milk"', 'sans-serif'],
+        curvy: ['Dancing Script', 'cursive'], 
+        dancing: ['Dancing Script', 'cursive'],
+        pacifico: ['Pacifico', 'cursive'],
+        greatVibes: ['Great Vibes', 'cursive'],
+        satisfy: ['Satisfy', 'cursive'],
+        lobster: ['Lobster', 'cursive'],// Custom font family
       },
     },
+  },
+  "animation": {
+    shimmer: "shimmer 2s linear infinite"
+  },
+  "keyframes": {
+    shimmer: {
+      from: {
+        "backgroundPosition": "0 0"
+      },
+      to: {
+        "backgroundPosition": "-200% 0"
+      }
+    }
   },
   plugins: [],
 }

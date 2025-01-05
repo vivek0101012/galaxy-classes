@@ -17,7 +17,7 @@ export default function Contactus(){
           </p>
           <div className="mt-6 flex items-center justify-center">
           <a href="https://maps.app.goo.gl/GBM9H8dSoBKqkJCEA">
-            <button className=" flex flex-row  justify-center items-center space-x-4 bg-gradient-to-r from-green-400 to-cyan-400 text-white px-8 py-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
+            <button className=" flex flex-row  bg-gray-500 bg-opacity-10 justify-center items-center space-x-4 shadow-[0px_0px_2px_2px_rgba(52,56,116,1)]  text-white px-8 py-3 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out">
             <a href="https://imgbb.com/"><img src="https://i.ibb.co/DC9zXDq/maps.png" alt="maps" width={24} border="0"/></a> View on Google Maps
             </button></a>
           </div>

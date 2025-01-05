@@ -8,7 +8,7 @@ export default function Features(){
         { title: "Doubt Clearing Sessions", description: "Dedicated sessions for deep dives into complex topics and concepts.", icon: "🔍" }
       ];
     
-return <div className="py-16  bg-gradient-to-b from-gray-800 to-gray-900 text-gray-100">
+return <div className="py-16  bg-[#020817] text-gray-100">
       <h3 className="text-center text-4xl font-extrabold text-cyan-400 underline decoration-dotted underline-offset-8">
    {" Features"}
         </h3>
@@ -16,7 +16,7 @@ return <div className="py-16  bg-gradient-to-b from-gray-800 to-gray-900 text-gr
     {
         features.map((e,index)=>(
 <div key={index}
-    className={` bg-gradient-to-br from-teal-400 to-cyan-400 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out  p-6 text-white space-y-2`}
+    className={` bg-gray-500 bg-opacity-10 shadow-[0px_0px_2px_2px_rgba(52,56,116,1)]  rounded-lg hover:scale-110 transition-transform duration-300 ease-in-out  p-6 text-white space-y-2`}
 >
 <div className="text-5xl">{e.icon}</div>
 <h1 className="font-bold text-2xl">{e.title}</h1>
