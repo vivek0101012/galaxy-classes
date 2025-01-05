@@ -17,10 +17,18 @@ return <div className="flex bg-gradient-to-b from-gray-800 to-gray-900 flex-col 
 </p>
 
 
-<button className="mt-10 bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 py-3 rounded-full text-lg shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
-            Join Now
-          </button>
 
+
+
+     <a
+        href="https://wa.me/917054722558?text=I%20want%20to%20join%20Galaxy%20Classes"
+        target="_blank"
+        rel="noopener noreferrer"
+      ><button className="mt-10 flex flex-row  justify-center items-center space-x-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 py-3 rounded-full text-lg shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
+
+      Join Now 
+      <img src="src/images/whatsapp.png" className="ml-2" alt="" width={24} />
+    </button> </a>
 </div>
 
 
