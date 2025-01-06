@@ -14,6 +14,7 @@ useEffect(
             axios.get("http://numbersapi.com/random/math?json").then(res=>{
                 setfacts(res.data.text);
              
+                console.log(" issues ")
             })
         }
         fetchfact();
