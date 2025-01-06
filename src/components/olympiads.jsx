@@ -61,7 +61,7 @@ export default  function Olympiad(){
     return <div className="py-16 bg-[#020817]">
 
 <h3 className="text-center text-4xl font-extrabold text-cyan-400 underline decoration-dotted underline-offset-8">
-   {"Olympads"}
+   {"Olympiads"}
         </h3>
 
         <div
