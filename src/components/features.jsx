@@ -8,7 +8,7 @@ export default function Features(){
         { title: "Doubt Clearing Sessions", description: "Dedicated sessions for deep dives into complex topics and concepts.", icon: "🔍" }
       ];
     
-return <div className="py-16  bg-[#020817] text-gray-100">
+return <div className="py-16  mt-48 md:mt-8 bg-[#020817] text-gray-100">
       <h3 className="text-center text-4xl font-extrabold text-cyan-400 underline decoration-dotted underline-offset-8">
    {" Features"}
         </h3>

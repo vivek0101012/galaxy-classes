@@ -15,7 +15,7 @@ return <div className="py-16 bg-[#020817] ">
    {"Batches"}
         </h3>
 
-<div className="  mt-10 px-2 justify-items-center items-center flex flex-col md:flex-row  justify-center gap-10">
+<div className="  mt-6 px-2 justify-items-center items-center flex flex-col md:flex-row  justify-center gap-10">
     {
     batches.map((e,i)=>(<div key={i}     className={` 
 shadow-2xl shadow-blue-500/20  max-w-[280px] bg-gradient-to-br from-indigo-500 to-pink-500
