@@ -27,17 +27,25 @@ export default function Links(){
         }
       ];
       
-   return <div className="py-16 bg-[#020817] ">
+   return <div
+ 
+   className="py-2  bg-[#020817] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)] ">
 
-<div className=" px-4 flex flex-row ">
+<div className=" px-4  flex flex-row ">
 <img src="https://i.ibb.co/VMJFNWh/live.gif" width={24} alt="live" border="0" />
 <p className="text-white ">@Latest updates</p>
 </div>
 
-<div className="mt-4 p-1 ">
+<div 
+  style={{
+    scrollbarWidth: 'none', 
+    msOverflowStyle: 'none', 
+    overflowX: 'scroll',
+  }}
+className="mt-1 h-[180px] overflow-y-scroll p-1 space-y-1 ">
 {
  importantLinks.map((e,i)=>(
-<div key={i}  className="text-center p-2 text-green-400  bg-gray-600 bg-opacity-10 animate-pulse shadow-[0px_0px_2px_2px_rgba(52,56,116,1)] ">
+<div key={i}  className="text-center p-2 text-green-400  bg-gray-600 bg-opacity-10 animate-pulse  ">
 <a href={e.url}>
     <p>{e.label}</p>
 </a>

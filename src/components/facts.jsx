@@ -25,7 +25,7 @@ useEffect(
     ,[])
 
  
-return <div className="py-16 bg-[#020817]">
+return <div className="py-2 shadow-[0px_0px_2px_2px_rgba(52,56,116,1)] bg-[#020817]">
 
 
 <p className="text-2xl md:text-4xl text-indigo-400  text-italic text-center"> {"Maths facts for the day"}</p>
