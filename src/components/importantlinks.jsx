@@ -29,7 +29,7 @@ export default function Links(){
       
    return <div
  
-   className="py-2 h-[220px]  w-full bg-[#020817] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)] ">
+   className="py-2 h-[220px]   bg-[#020817] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)] ">
 
 <div className=" flex flex-row ">
 <img src="https://i.ibb.co/VMJFNWh/live.gif" width={24} alt="live" border="0" />
