@@ -1,7 +1,7 @@
 
 
 export default function Contactus(){
-    return <div className="py-16 bg-gray-900 ">
+    return <div className="py-4 bg-gray-900  ">
  <h3 className="text-center text-4xl font-extrabold text-cyan-400 underline decoration-dotted underline-offset-8">
    {"Contact US"}
         </h3>
