@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 
 export default function Facts(){
-    const [Facts,setfacts]=useState("The number zero is the only number that cannot be represented by Roman numerals");
+    const [Facts,setfacts]=useState(" ");
 
 useEffect(
     ()=>{
