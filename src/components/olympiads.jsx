@@ -78,9 +78,9 @@ export default  function Olympiad(){
   key={i}
   className={`bg-[#0C1122]  min-w-[240px] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)]  hover:scale-110 transition-transform duration-300 ease-in-out  border-gray-400 rounded-lg  hover:shadow-xl p-6 text-white space-y-4`}
 >
-  <p className="text-lg font-extrabold tracking-wide text-center">{e.name}</p>
-  <p className="text-sm text-gray-100 text-center opacity-90">{e.description}</p>
-  <a href={e.url} className="flex justify-center">
+  <p className="text-lg  text-violet-300 font-extrabold tracking-wide ">{e.name}</p>
+  <p className="text-sm text-green-300 text opacity-90">{e.description}</p>
+  <a href={e.url} className="flex ">
     <button className="px-4 py-2 mt-4 active:scale-95  transition-transform bg-blue-600 text-white font-medium rounded-lg hover:bg-gray-100 hover:text-cyan-700 shadow-md ">
       Learn more
     </button>
