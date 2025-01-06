@@ -28,7 +28,7 @@ return <div className="flex  bg-[#020817] flex-col text-center px-1 items-center
 shadow-md shadow-blue-800 flex flex-row  justify-center items-center space-x-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 py-3 rounded-full text-lg  hover:scale-110 transition-transform duration-300 ease-in-out">
 
       Join Now 
-      <a className="p-1" href="https://imgbb.com/"><img src="https://i.ibb.co/6JBBH5d/whatsapp.png" width={24} alt="whatsapp" border="0" /></a> 
+    <img src="https://i.ibb.co/6JBBH5d/whatsapp.png" width={24} alt="whatsapp" border="0" /> 
     </button> </a>
 </div>
 

@@ -30,7 +30,7 @@ export default function Links(){
    return <div className="py-16 bg-[#020817] ">
 
 <div className=" px-4 flex flex-row ">
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/LCzTq6S/live.gif" width={24} alt="live" border="0" /></a>
+<img src="https://i.ibb.co/VMJFNWh/live.gif" width={24} alt="live" border="0" />
 <p className="text-white ">@Latest updates</p>
 </div>
 
