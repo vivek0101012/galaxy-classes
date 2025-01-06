@@ -34,7 +34,7 @@ export default function Classes() {
           ))}
         </div>
   
-        {/* Class Grade Section */}
+       
         <div className="mt-10 grid grid-cols-1 md:grid-cols-5 gap-8 px-6">
           {[
             {

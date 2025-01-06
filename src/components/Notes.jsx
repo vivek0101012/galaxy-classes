@@ -1,4 +1,5 @@
 
+import { motion } from "framer-motion";
 import { useState } from "react"
 
 
@@ -44,7 +45,10 @@ export default function  Notes(){
 <div className="grid px-3 grid-cols-1 md:grid-cols-5 gap-4 p-2  mt-10">
 {
     Board.map((e,i)=>(
-        <div
+        <motion.div
+        initial={{y:0}}
+        animate={{y:-10}}
+        transition={{duration:2}}
   key={i}
   className={`bg-[#0C1122] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)]  hover:scale-110 transition-transform duration-300 ease-in-out  border-gray-400 rounded-lg  hover:shadow-xl p-6 text-white space-y-4`}
 >
@@ -55,7 +59,7 @@ export default function  Notes(){
       View Notes
     </button>
   </a>
-</div>
+</motion.div>
 
     ))
 

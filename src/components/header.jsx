@@ -23,26 +23,25 @@ export function Header() {
           ease: "easeInOut",
         }}
       >
-        <div className="flex flex-row">
+<div className="flex flex-row">
+  {text.split("").map((e, i) => {
+    // Modify e before returning it
+    let modifiedChar = e == "C" ? "     " + e : e;
+console.log(modifiedChar);
+    return (
+      <motion.h1
+        key={i}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: i * 0.15 }}
+        className=""
+      >
+        {modifiedChar}
+      </motion.h1>
+    );
+  })}
+</div>
 
-        {
-            text.split("").map((e,i)=>( <motion.h1 key={i} 
-         initial={{opacity:0}}
-         animate={{opacity:1}} 
-         className=""
-         transition={{ duration:2,delay:i*0.15}}
-    
->
-  
-
-{e}
-
-</motion.h1>
-
-            ))
- 
-        }
-        </div>
       
       </motion.h1>
 
