@@ -71,7 +71,7 @@ export default  function Olympiad(){
             overflowX: 'scroll',
           }}
         
-        className=" overflow-x-scroll web flex flex-row px-3  gap-4 p-2 max-h-[440px]  space-x-4 mt-10">
+        className=" overflow-x-scroll web flex flex-row px-3  gap-4 p-2  space-x-4 mt-10">
 {
     indianOlympiads.map((e,i)=>(
         <div
