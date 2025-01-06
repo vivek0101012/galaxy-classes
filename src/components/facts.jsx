@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+ 
 import axios from "axios";
 import { useEffect, useState } from "react"
 
@@ -14,7 +14,6 @@ useEffect(
             axios.get("http://numbersapi.com/random/math?json").then(res=>{
                 setfacts(res.data.text);
              
-                console.log(" issues ")
             })
         }
         fetchfact();
@@ -25,7 +24,7 @@ useEffect(
     
     ,[])
 
-    console.log(Facts)
+ 
 return <div className="py-16 bg-[#020817]">
 
 

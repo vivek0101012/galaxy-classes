@@ -1,3 +1,4 @@
+
 import Afterfooter from "./after"
 import Batches from "./components/batches"
 import Classes from "./components/classes"
@@ -6,7 +7,9 @@ import Facts from "./components/facts"
 import Features from "./components/features"
 import { Header } from "./components/header"
 import { Hero } from "./components/hero"
+import Links from "./components/importantlinks"
 import Notes from "./components/Notes"
+import Olympiad from "./components/olympiads"
 
 
 
@@ -22,6 +25,8 @@ function App(){
 <Features></Features>
 <Batches></Batches>
 <Notes></Notes>
+<Links></Links>
+<Olympiad></Olympiad>
 <Contactus></Contactus>
 <Afterfooter></Afterfooter>
   </div>
