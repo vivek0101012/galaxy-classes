@@ -26,7 +26,8 @@ export function Header() {
 <div className="flex flex-row">
   {text.split("").map((e, i) => {
     // Modify e before returning it
-    let modifiedChar = e == "C" ? "     " + e : e;
+    let modifiedChar = e == "C" ? "     C"  : e;
+   modifiedChar = e == "y" ? "     y"  : e;
 console.log(modifiedChar);
     return (
       <motion.h1

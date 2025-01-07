@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 export default function Links(){
     const importantLinks = [
@@ -36,20 +37,32 @@ export default function Links(){
 <p className="text-white ">@Latest updates</p>
 </div>
 
-<div 
+
+<div   
   style={{
     scrollbarWidth: 'none', 
     msOverflowStyle: 'none', 
     overflowX: 'scroll',
   }}
+
+
 className="h-[180px] overflow-y-scroll p-1 space-y-1 ">
 {
  importantLinks.map((e,i)=>(
-<div key={i}  className="text-center p-2 text-green-400  bg-gray-600 bg-opacity-10 animate-pulse  ">
+<motion.div key={i} 
+  animate={{
+    y: ["0%" ,"-200%"], // Move from right to left
+  }}
+  transition={{
+    duration: 2, // Total animation time
+    repeat: Infinity, // Infinite loop
+    ease: "linear",
+  }}
+className="text-center p-2 text-green-400  bg-gray-600 bg-opacity-10 animate-pulse  ">
 <a href={e.url}>
     <p>{e.label}</p>
 </a>
-</div>
+</motion.div>
 
  ))
    
