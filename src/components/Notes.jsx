@@ -7,22 +7,22 @@ import { useState } from "react"
 
 export default function  Notes(){
 
-    let CBSE = [
-        { title: 'Class 6', description: 'Basics', url: 'https://drive.google.com/drive/folders/1DeuAh1lxRFo4DsNztTqp-Dz4Mq9YnZNO?usp=drive_link' },
-        { title: 'Class 7', description: 'Intermediate', url: 'https://drive.google.com/drive/folders/1Vtfm1eBpUr0kTWfp6B22-w9X7z3_cowW?usp=drive_link' },
-        { title: 'Class 8', description: 'Advanced', url: 'https://drive.google.com/drive/folders/1vymNhVePVlgT-Yi5cMykAD-xv94tpmbF?usp=drive_link' },
-        { title: 'Class 9', description: 'Foundation', url: 'https://drive.google.com/drive/folders/1L_NmEcCC-TY6l7DGDX-DE9MEPOLRIM7s?usp=drive_link' },
-        { title: 'Class 10', description: 'Board Prep', url: 'https://drive.google.com/drive/folders/1DBdnWogsQ2OK_Fg0ZNwK5E6l13vyl7Pp?usp=drive_link' }
-      ];
-      
-      let ICSE = [
-        { title: 'Class 6', description: 'Basics', url: 'https://drive.google.com/drive/folders/1c0BYEfXyc9evRAYeqQnM9gHQ_vhNjA-y?usp=drive_link' },
-        { title: 'Class 7', description: 'Intermediate', url: 'https://drive.google.com/drive/folders/12NCUV1PpxTZtBfIrukKRF2Hl5lKM_3m4?usp=drive_link' },
-        { title: 'Class 8', description: 'Advanced', url: 'https://drive.google.com/drive/folders/162d_ummrnp2wakJ8etI-sgOT09JaWHtU?usp=drive_link' },
-        { title: 'Class 9', description: 'Foundation', url: 'https://drive.google.com/drive/folders/15ea_5QDjtNZop2vaCih2iPtt27Ur9v1A?usp=drive_link' },
-        { title: 'Class 10', description: 'Board Prep', url: 'https://drive.google.com/drive/folders/1uBm1KPGCIJE4H6kXMfatlSz0YmMfx4Mp?usp=drive_link' }
-      ];
-      
+  let CBSE = [
+    { title: 'Class 6', description: 'Basics', url: 'https://drive.google.com/drive/folders/1DeuAh1lxRFo4DsNztTqp-Dz4Mq9YnZNO?usp=drive_link', board: 'CBSE' },
+    { title: 'Class 7', description: 'Intermediate', url: 'https://drive.google.com/drive/folders/1Vtfm1eBpUr0kTWfp6B22-w9X7z3_cowW?usp=drive_link', board: 'CBSE' },
+    { title: 'Class 8', description: 'Advanced', url: 'https://drive.google.com/drive/folders/1vymNhVePVlgT-Yi5cMykAD-xv94tpmbF?usp=drive_link', board: 'CBSE' },
+    { title: 'Class 9', description: 'Foundation', url: 'https://drive.google.com/drive/folders/1L_NmEcCC-TY6l7DGDX-DE9MEPOLRIM7s?usp=drive_link', board: 'CBSE' },
+    { title: 'Class 10', description: 'Board Prep', url: 'https://drive.google.com/drive/folders/1DBdnWogsQ2OK_Fg0ZNwK5E6l13vyl7Pp?usp=drive_link', board: 'CBSE' }
+  ];
+  
+  let ICSE = [
+    { title: 'Class 6', description: 'Basics', url: 'https://drive.google.com/drive/folders/1c0BYEfXyc9evRAYeqQnM9gHQ_vhNjA-y?usp=drive_link', board: 'ICSE' },
+    { title: 'Class 7', description: 'Intermediate', url: 'https://drive.google.com/drive/folders/12NCUV1PpxTZtBfIrukKRF2Hl5lKM_3m4?usp=drive_link', board: 'ICSE' },
+    { title: 'Class 8', description: 'Advanced', url: 'https://drive.google.com/drive/folders/162d_ummrnp2wakJ8etI-sgOT09JaWHtU?usp=drive_link', board: 'ICSE' },
+    { title: 'Class 9', description: 'Foundation', url: 'https://drive.google.com/drive/folders/15ea_5QDjtNZop2vaCih2iPtt27Ur9v1A?usp=drive_link', board: 'ICSE' },
+    { title: 'Class 10', description: 'Board Prep', url: 'https://drive.google.com/drive/folders/1uBm1KPGCIJE4H6kXMfatlSz0YmMfx4Mp?usp=drive_link', board: 'ICSE' }
+  ];
+  
 
 
     const [Board,setBoard]=useState(CBSE);
@@ -45,21 +45,24 @@ export default function  Notes(){
 <div className="grid px-3 grid-cols-1 md:grid-cols-5 gap-4 p-2  mt-10">
 {
     Board.map((e,i)=>(
-        <motion.div
-        initial={{y:0}}
-        animate={{y:-10}}
-        transition={{duration:2}}
+        <div
+       
   key={i}
   className={`bg-[#0C1122] shadow-[0px_0px_2px_2px_rgba(52,56,116,1)]  hover:scale-110 transition-transform duration-300 ease-in-out  border-gray-400 rounded-lg  hover:shadow-xl p-6 text-white space-y-4`}
 >
-  <p className="text-xl font-extrabold tracking-wide text-center">{e.title}</p>
+  <p className="text-xl font-extrabold tracking-wide text-center">{e.title}
+
+  <p className="text-xs text-gray-100  text-center font-thin  opacity-90">{e.board}</p>
+
+  </p>
+
   <p className="text-lg text-gray-100 text-center opacity-90">{e.description}</p>
   <a href={e.url} className="flex justify-center">
     <button className="px-4 py-2 mt-4 active:scale-95  transition-transform bg-blue-600 text-white font-medium rounded-lg hover:bg-gray-100 hover:text-cyan-700 shadow-md ">
       View Notes
     </button>
   </a>
-</motion.div>
+</div>
 
     ))
 
